@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission UI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="app" style="display:none;">
+        <div class="card-container">
+            <div class="card">
+                <div class="card-header">
+                    <button id="close-btn" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="card-content">
+                    <h2 class="title">TWÓJ POZIOM W RABOWANIU<br>FUR</h2>
+                    <div class="level-circle-container">
+                        <svg class="progress-ring" width="120" height="120">
+                            <circle class="progress-ring__circle-bg" stroke="rgba(255,255,255,0.1)" stroke-width="6" fill="transparent" r="52" cx="60" cy="60"/>
+                            <circle class="progress-ring__circle" stroke="#d633b8" stroke-width="6" fill="transparent" r="52" cx="60" cy="60"/>
+                        </svg>
+                        <div class="level-text">
+                            <span class="lvl-number">1 LVL</span>
+                        </div>
+                    </div>
+                    <div class="description-box">
+                        <p>
+                            Na poziomie 1, zarabiasz dodatkowo:<br>
+                            <span class="highlight">15$</span>. Zwiększ swój poziom, wykonując<br>
+                            zadania i sprzedając auta. <i class="fa-solid fa-cubes-stacked icon-faded"></i>
+                        </p>
+                    </div>
+                    <button id="accept-btn" class="start-btn">ROZPOCZNIJ MISJĘ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
